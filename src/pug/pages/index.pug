@@ -36,20 +36,32 @@ DOCTYPEhtml
                             a(href='#') ПЕРЕЙТИ В КАТАЛОГ
             .advantage
                 .container
-                    h2.advantage__header НАШИ ПРЕИМУЩЕСТВА
+                    h2.title НАШИ ПРЕИМУЩЕСТВА
                     .advantage__items
                         .advantage__item
-                            img(src='../src/static/img/icon-4.png', alt='cup')
+                            .advantage__icon
+                                img(src='../src/static/img/icon-4.png', alt='cup')
                             h3 Делимся опытом
                             p Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                         .advantage__item
-                            img(src='../src/static/img/icon-5.png', alt='puls')
+                            .advantage__icon
+                                img(src='../src/static/img/icon-5.png', alt='puls')
                             h3 Заботимся о здоровье
                             p Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
                         .advantage__item
-                            img(src='../src/static/img/icon-6.png', alt='cross')
+                            .advantage__icon
+                                img(src='../src/static/img/icon-6.png', alt='cross')
                             h3 Учим бегать
                             p Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - 
                                 a(href='#') I LOVE RUNNING.
+            .consultation
+                .container
+                    h2.title.title_left Получите бесплатную консультацию по подбору пульсометра 
+                    .consultation__descr Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
+                    form.form(action='#')
+                        input(required name='name' placeholder='Ваше имя' type='text')
+                        input(required name='phone' placeholder='Ваш телефон' type='number')
+                        input(required name='e-mail' placeholder='Ваш E-mail' type='email')
+                        button.button.button_submit заказать кОНСУЛЬТАЦИЮ
             script(src='static/js/libs.min.js')
             script(src='static/js/main.js')
