@@ -4,12 +4,13 @@ DOCTYPEhtml
             meta(charset='UTF-8')
             meta(name='viewport' content='width=device-width, initial-scale=1.0')
             link(rel='stylesheet', href='../src/static/fons/stylesheet.css')
+            link(rel='stylesheet' type='text/css' href='static/css/slick.css')
             link(rel='stylesheet', href='static/css/main.css')    
             title Pulse
         body
-            .promo  
+            section.promo  
                 .container
-                    .header
+                    header.header
                         a.header__logo(href='#')
                             img(src='../src/static/img/logo.png' alt='logo')
                         .header__official Официальный представитель
@@ -34,7 +35,7 @@ DOCTYPEhtml
                         .promo__link
                             p или 
                             a(href='#') ПЕРЕЙТИ В КАТАЛОГ
-            .advantage
+            section.advantage
                 .container
                     h2.title НАШИ ПРЕИМУЩЕСТВА
                     .advantage__items
@@ -54,7 +55,7 @@ DOCTYPEhtml
                             h3 Учим бегать
                             p Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - 
                                 a(href='#') I LOVE RUNNING.
-            .consultation
+            section.consultation
                 .container
                     h2.title.title_left Получите бесплатную консультацию по подбору пульсометра 
                     .consultation__descr Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
@@ -63,5 +64,17 @@ DOCTYPEhtml
                         input(required name='phone' placeholder='Ваш телефон' type='number')
                         input(required name='e-mail' placeholder='Ваш E-mail' type='email')
                         button.button.button_submit заказать кОНСУЛЬТАЦИЮ
+            section.slider
+                .container
+                    .slider__iner
+                        div
+                            img(src='../src/static/img/slider-1.jpg', alt='slider-1')
+                        div
+                            img(src='../src/static/img/slider-2.jpg', alt='slider-2')
+                        div
+                            img(src='../src/static/img/slider-3.jpg', alt='slider-3')
+            script(type='text/javascript' src='//code.jquery.com/jquery-1.11.0.min.js')
+            script(type='text/javascript' src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
             script(src='static/js/libs.min.js')
+            script(type='text/javascript' src='static/js/slick.min.js')
             script(src='static/js/main.js')
