@@ -59,11 +59,11 @@ DOCTYPEhtml
                 .container
                     h2.title.title_left Получите бесплатную консультацию по подбору пульсометра 
                     .consultation__descr Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
-                    form.form(action='#')
-                        input(required name='name' placeholder='Ваше имя' type='text')
-                        input(required name='phone' placeholder='Ваш телефон' type='number')
-                        input(required name='e-mail' placeholder='Ваш E-mail' type='email')
-                        button.button.button_submit(data-modal='consultation') заказать кОНСУЛЬТАЦИЮ
+                    form.form(action='#' id='consultation-form')
+                        input(name='name' placeholder='Ваше имя' type='text')
+                        input(name='phone' placeholder='Ваш телефон')
+                        input(name='email' placeholder='Ваш E-mail' type='email')
+                        button.button.button_submit заказать кОНСУЛЬТАЦИЮ
             section.slider
                 .container
                     .slider__iner
@@ -317,18 +317,18 @@ DOCTYPEhtml
                     .modal__subtitle Просто заполните форму заявки
                     .modal__descr и мы перезвоним вам в течении 10 минут
                     form.form.form_mt25(action='#')
-                        input(required name='name' placeholder='Ваше имя' type='text')
-                        input(required name='phone' placeholder='Ваш телефон' type='number')
-                        input(required name='e-mail' placeholder='Ваш E-mail' type='email')
+                        input(name='name' placeholder='Ваше имя' type='text')
+                        input(name='phone' placeholder='Ваш телефон')
+                        input(name='email' placeholder='Ваш E-mail' type='email')
                         button.button.button_submit заказать кОНСУЛЬТАЦИЮ
                 .modal(id='order')
                     .modal__close &times;
                     .modal__subtitle Ваш заказ:
                     .modal__descr Пульсометр Polar FT1
                     form.form.form_mt25(action='#')
-                        input(required name='name' placeholder='Ваше имя' type='text')
-                        input(required name='phone' placeholder='Ваш телефон' type='number')
-                        input(required name='e-mail' placeholder='Ваш E-mail' type='email')
+                        input(name='name' placeholder='Ваше имя' type='text')
+                        input(name='phone' placeholder='Ваш телефон')
+                        input(name='email' placeholder='Ваш E-mail' type='email')
                         button.button.button_submit Купить
                 .modal.modal_thanks(id='thanks')
                     .modal__close &times;
@@ -339,4 +339,6 @@ DOCTYPEhtml
             script(type='text/javascript' src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
             script(src='static/js/libs.min.js')
             script(type='text/javascript' src='static/js/slick.min.js')
+            script(src='static/js/jquery.validate.min.js')
+            script(src='static/js/jquery.maskedinput.min.js')
             script(src='static/js/main.js')

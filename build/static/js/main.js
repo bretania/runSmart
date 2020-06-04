@@ -35,19 +35,47 @@ $(document).ready(function(){
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
-});
 
-$('[data-modal=consultation]').on('click', function() {
-  $('.overlay, #consultation').fadeIn('slow');
-});
 
-$('.modal__close').on('click', function() {
-  $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
-});
+  $('[data-modal=consultation]').on('click', function() {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
 
-$('.button_mini').each(function(i) {
-  $(this).on('click', function() {
-    $('#order .modal__descr').text($('.catalog-item__title').eq(i).text());
-    $('.overlay, #order').fadeIn('slow');
-  })
-})
+  $('.modal__close').on('click', function() {
+    $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+  });
+
+  $('.button_mini').each(function(i) {
+    $(this).on('click', function() {
+      $('#order .modal__descr').text($('.catalog-item__title').eq(i).text());
+      $('.overlay, #order').fadeIn('slow');
+    })
+  });
+
+  function validateForm(form) {
+    $(form).validate({
+      rules: {
+        name: 'required',
+        phone: 'required',
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: 'Пожалуйста, введите своё имя',
+        phone: 'Пожалуйста, введите свой телефон',
+        email: {
+          required: 'Пожалуйста, введите свою почту',
+          email: "Почта не в формате name@domain.com"
+        }
+      }
+    });
+  };
+
+  validateForm('#consultation-form');
+  validateForm('#consultation form');
+  validateForm('#order form');
+
+  $('input[name=phone]').mask('+7 (999) 999-99-99');
+});

@@ -65,11 +65,11 @@
         <div class="container">
           <h2 class="title title_left">Получите бесплатную консультацию по подбору пульсометра </h2>
           <div class="consultation__descr">Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут</div>
-          <form class="form" action="#">
-            <input required="required" name="name" placeholder="Ваше имя" type="text"/>
-            <input required="required" name="phone" placeholder="Ваш телефон" type="number"/>
-            <input required="required" name="e-mail" placeholder="Ваш E-mail" type="email"/>
-            <button class="button button_submit" data-modal="consultation">заказать кОНСУЛЬТАЦИЮ</button>
+          <form class="form" action="#" id="consultation-form">
+            <input name="name" placeholder="Ваше имя" type="text"/>
+            <input name="phone" placeholder="Ваш телефон"/>
+            <input name="email" placeholder="Ваш E-mail" type="email"/>
+            <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
           </form>
         </div>
       </section>
@@ -365,9 +365,9 @@
           <div class="modal__subtitle">Просто заполните форму заявки</div>
           <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
           <form class="form form_mt25" action="#">
-            <input required="required" name="name" placeholder="Ваше имя" type="text"/>
-            <input required="required" name="phone" placeholder="Ваш телефон" type="number"/>
-            <input required="required" name="e-mail" placeholder="Ваш E-mail" type="email"/>
+            <input name="name" placeholder="Ваше имя" type="text"/>
+            <input name="phone" placeholder="Ваш телефон"/>
+            <input name="email" placeholder="Ваш E-mail" type="email"/>
             <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
           </form>
         </div>
@@ -376,9 +376,9 @@
           <div class="modal__subtitle">Ваш заказ:</div>
           <div class="modal__descr">Пульсометр Polar FT1</div>
           <form class="form form_mt25" action="#">
-            <input required="required" name="name" placeholder="Ваше имя" type="text"/>
-            <input required="required" name="phone" placeholder="Ваш телефон" type="number"/>
-            <input required="required" name="e-mail" placeholder="Ваш E-mail" type="email"/>
+            <input name="name" placeholder="Ваше имя" type="text"/>
+            <input name="phone" placeholder="Ваш телефон"/>
+            <input name="email" placeholder="Ваш E-mail" type="email"/>
             <button class="button button_submit">Купить</button>
           </form>
         </div>
@@ -392,6 +392,8 @@
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script src="static/js/libs.min.js"></script>
       <script type="text/javascript" src="static/js/slick.min.js"></script>
+      <script src="static/js/jquery.validate.min.js"></script>
+      <script src="static/js/jquery.maskedinput.min.js"></script>
       <script src="static/js/main.js"></script>
     </body>
   </html>
