@@ -8,7 +8,7 @@ DOCTYPEhtml
             link(rel='stylesheet', href='static/css/main.css')    
             title Pulse
         body
-            section.promo  
+            section.promo(id='up') 
                 .container
                     header.header
                         a.header__logo(href='#')
@@ -45,7 +45,7 @@ DOCTYPEhtml
                             h3 Делимся опытом
                             p Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                         .advantage__item
-                            .advantage__icon
+                            .advantage__icon.advantage__icon_animation
                                 img(src='../src/static/img/icon-5.png', alt='puls')
                             h3 Заботимся о здоровье
                             p Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -334,7 +334,8 @@ DOCTYPEhtml
                     .modal__close &times;
                     .modal__subtitle Спасибо за вашу заявку!
                     .modal__descr Наш менеджер свяжется с вами в ближайшее время!
-
+            a.pageup(href='#up')
+                img(src='../src/static/img/arrow-up.png', alt='arrow-up')
             script(type='text/javascript' src='//code.jquery.com/jquery-1.11.0.min.js')
             script(type='text/javascript' src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
             script(src='static/js/libs.min.js')
