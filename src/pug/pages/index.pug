@@ -1,345 +1,345 @@
 DOCTYPEhtml
-    html(lang='ru')
-        head
-            meta(charset='UTF-8')
-            meta(name='viewport' content='width=device-width, initial-scale=1.0')
-            link(rel='stylesheet', href='../src/static/fons/stylesheet.css')
-            link(rel='stylesheet' type='text/css' href='static/css/slick.css')
-            link(rel='stylesheet', href='static/css/main.css')    
-            title Pulse
-        body
-            section.promo(id='up') 
-                .container
-                    header.header
-                        a.header__logo(href='#')
-                            img(src='../src/static/img/logo.png' alt='logo')
-                        .header__official Официальный представитель
-                            span Garmin, Polar, Suunto
-                        .header__contacts
-                            a.header__phone(href='tel:+74999228974') +7 (499) 922-89-74
-                            button.button(data-modal='consultation') заказать звонок
-                    .promo__wrapper
-                        h1.promo__header Подбор пульсометра
-                        h2.promo__subheader с учётом Вашего уровня подготовки
-                        .promo__icons
-                            .promo__icon
-                                img(src='../src/static/img/icon-timer.png', alt='timer')
-                                p Время подбора: 10 минут
-                            .promo__icon
-                                img(src='../src/static/img/icon-cart.png', alt='hard-cart')
-                                p Бесплатная доставка
-                            .promo__icon
-                                img(src='../src/static/img/icon-messages.png', alt='messages')
-                                p Ответим на все вопросы
-                        button.button.button_promo(data-modal='consultation') заказать кОНСУЛЬТАЦИЮ
-                        .promo__link
-                            p или 
-                            a(href='#') ПЕРЕЙТИ В КАТАЛОГ
-            section.advantage
-                .container
-                    h2.title НАШИ ПРЕИМУЩЕСТВА
-                    .advantage__items
-                        .advantage__item
-                            .advantage__icon
-                                img(src='../src/static/img/icon-4.png', alt='cup')
-                            h3 Делимся опытом
-                            p Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
-                        .advantage__item
-                            .advantage__icon.advantage__icon_animation
-                                img(src='../src/static/img/icon-5.png', alt='puls')
-                            h3 Заботимся о здоровье
-                            p Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
-                        .advantage__item
-                            .advantage__icon
-                                img(src='../src/static/img/icon-6.png', alt='cross')
-                            h3 Учим бегать
-                            p Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - 
-                                a(href='#') I LOVE RUNNING.
-            section.consultation
-                .container
-                    h2.title.title_left Получите бесплатную консультацию по подбору пульсометра 
-                    .consultation__descr Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
-                    form.form(action='#' id='consultation-form')
-                        input(name='name' placeholder='Ваше имя' type='text')
-                        input(name='phone' placeholder='Ваш телефон')
-                        input(name='email' placeholder='Ваш E-mail' type='email')
-                        button.button.button_submit заказать кОНСУЛЬТАЦИЮ
-            section.slider
-                .container
-                    .slider__iner
-                        div
-                            img(src='../src/static/img/slider-1.jpg', alt='slider-1')
-                        div
-                            img(src='../src/static/img/slider-2.jpg', alt='slider-2')
-                        div
-                            img(src='../src/static/img/slider-3.jpg', alt='slider-3')
-            section.catalog
-                .container
-                    h2.title Каталог пульсометров
-                    ul.catalog__tabs
-                        li.catalog__tab.catalog__tab_active
-                            p Для фитнеса
-                        li.catalog__tab
-                            p для бега
-                        li.catalog__tab
-                            p для триатлона
-                    .catalog__items.catalog__items_active
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Polar FT1
-                                .catalog-item__descr Для первых шагов в тренировках, основанных на сердечном ритме
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 4 750 руб.
-                                    .catalog-item__price 4 500 руб.
-                                button.button.button_mini КУПИТЬ
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Suunto M2
-                                .catalog-item__descr Пульсометр начального уровня с комфортным тканевым ремешком
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 6 990 руб.
-                                    .catalog-item__price 6 641 руб.
-                                button.button.button_mini КУПИТЬ
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Polar FT4
-                                .catalog-item__descr Улучшенная версия Polar FT1, имеющая следующие улучшения:
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 7 390 руб.
-                                    .catalog-item__price 7 021 руб.
-                                button.button.button_mini КУПИТЬ
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Polar FT1
-                                .catalog-item__descr Для первых шагов в тренировках, основанных на сердечном ритме
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 4 750 руб.
-                                    .catalog-item__price 4 500 руб.
-                                button.button.button_mini КУПИТЬ
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Suunto M2
-                                .catalog-item__descr Пульсометр начального уровня с комфортным тканевым ремешком
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 6 990 руб.
-                                    .catalog-item__price 6 641 руб.
-                                button.button.button_mini КУПИТЬ
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Polar FT4
-                                .catalog-item__descr Улучшенная версия Polar FT1, имеющая следующие улучшения:
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 7 390 руб.
-                                    .catalog-item__price 7 021 руб.
-                                button.button.button_mini КУПИТЬ
-                    .catalog__items
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Polar FT1
-                                .catalog-item__descr Для первых шагов в тренировках, основанных на сердечном ритме
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 4 750 руб.
-                                    .catalog-item__price 4 500 руб.
-                                button.button.button_mini КУПИТЬ
-                    .catalog__items
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Polar FT1
-                                .catalog-item__descr Для первых шагов в тренировках, основанных на сердечном ритме
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 4 750 руб.
-                                    .catalog-item__price 4 500 руб.
-                                button.button.button_mini КУПИТЬ
-                        .catalog-item
-                            .catalog-item__product.catalog-item__product_active
-                                .catalog-item__img
-                                    img(src="../src/static/img/product.jpg", alt="product")
-                                .catalog-item__title Пульсометр Polar FT4
-                                .catalog-item__descr Улучшенная версия Polar FT1, имеющая следующие улучшения:
-                                a.catalog-item__link(href='#') ПОДРОБНЕЕ
-                            .catalog-item__list
-                                a.catalog-item__back(href='#') НАЗАД
-                                ul
-                                    li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
-                                    li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
-                                    li Также Вы увидите информацию о расходе калорий за тренировку;
-                                    li Вы сможете посмотреть данные по 10 тренировкам. 
-                            .catalog-item__line
-                            .catalog-item__footer
-                                .catalog-item__prices
-                                    .catalog-item__old-price 7 390 руб.
-                                    .catalog-item__price 7 021 руб.
-                                button.button.button_mini КУПИТЬ
-            section.feedback
-                .container
-                    h2.title отзывы клиентов
-                    .feedback__items
-                        .feedback-item
-                            .feedback-item__logo
-                                img(src='../src/static/img/icon-fb1.jpg' alt='foto-1')
-                            .feedback-item__info
-                                .feedback-item__name Ирина Иванченко 
-                                .feedback-item__descr 2 полумарафона
-                                .feedback-item__text
-                                    p Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
-                                    p Новые цели - новый гаджет!
-                                    p Спасибо, RunSmart! 
-                        .feedback-item
-                            .feedback-item__logo
-                                img(src='../src/static/img/icon-fb2.jpg' alt='foto-2')
-                            .feedback-item__info
-                                .feedback-item__name Иван Сёмочкин 
-                                .feedback-item__descr 1 полумарафон
-                                .feedback-item__text
-                                    p Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал.Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
-                                    p С ними подготовился к своему первому полумарафону! Спасибо!!!
-                        .feedback-item
-                            .feedback-item__logo
-                                img(src='../src/static/img/icon-fb3.jpg' alt='foto-3')
-                            .feedback-item__info
-                                .feedback-item__name Юлия Дашкина 
-                                .feedback-item__descr 2 полумарафона
-                                .feedback-item__text
-                                    p Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
-                                    p Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
-                                    p Спасибо!!!
-            footer.footer
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.381314056793!2d37.643273091835326!3d55.76924897949753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1591257243846!5m2!1sru!2sru" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                .footer__contacts
-                    address.footer__address Москва, Мясницкий проезд, д.3с1
-                    a.footer__phone(href='tel:84999228974') 8 (499) 922-89-74
-                    .footer__social
-                        a.footer__icon(href='#')
-                            img(src='../src/static/img/icon-facebook.png' alt='facebook')
-                        a.footer__icon(href='#')
-                            img(src='../src/static/img/icon-in.png' alt='instagrame')
-                        a.footer__icon(href='#')
-                            img(src='../src/static/img/icon-pt.png' alt='pinterest')
-            .overlay
-                .modal(id='consultation')
-                    .modal__close &times;
-                    .modal__subtitle Просто заполните форму заявки
-                    .modal__descr и мы перезвоним вам в течении 10 минут
-                    form.form.form_mt25(action='#')
-                        input(name='name' placeholder='Ваше имя' type='text')
-                        input(name='phone' placeholder='Ваш телефон')
-                        input(name='email' placeholder='Ваш E-mail' type='email')
-                        button.button.button_submit заказать кОНСУЛЬТАЦИЮ
-                .modal(id='order')
-                    .modal__close &times;
-                    .modal__subtitle Ваш заказ:
-                    .modal__descr Пульсометр Polar FT1
-                    form.form.form_mt25(action='#')
-                        input(name='name' placeholder='Ваше имя' type='text')
-                        input(name='phone' placeholder='Ваш телефон')
-                        input(name='email' placeholder='Ваш E-mail' type='email')
-                        button.button.button_submit Купить
-                .modal.modal_thanks(id='thanks')
-                    .modal__close &times;
-                    .modal__subtitle Спасибо за вашу заявку!
-                    .modal__descr Наш менеджер свяжется с вами в ближайшее время!
-            a.pageup(href='#up')
-                img(src='../src/static/img/arrow-up.png', alt='arrow-up')
-            script(type='text/javascript' src='//code.jquery.com/jquery-1.11.0.min.js')
-            script(type='text/javascript' src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
-            script(src='static/js/libs.min.js')
-            script(type='text/javascript' src='static/js/slick.min.js')
-            script(src='static/js/jquery.validate.min.js')
-            script(src='static/js/jquery.maskedinput.min.js')
-            script(src='static/js/main.js')
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href='../src/static/fons/stylesheet.css')
+        link(rel='stylesheet' type='text/css' href='static/css/slick.css')
+        link(rel='stylesheet', href='static/css/main.css')    
+        title Pulse
+    body
+        section.promo(id='up') 
+            .container
+                header.header
+                    a.header__logo(href='#')
+                        img(src='../src/static/img/logo.png' alt='logo')
+                    .header__official Официальный представитель
+                        span Garmin, Polar, Suunto
+                    .header__contacts
+                        a.header__phone(href='tel:+74999228974') +7 (499) 922-89-74
+                        button.button(data-modal='consultation') заказать звонок
+                .promo__wrapper
+                    h1.promo__header Подбор пульсометра
+                    h2.promo__subheader с учётом Вашего уровня подготовки
+                    .promo__icons
+                        .promo__icon
+                            img(src='../src/static/img/icon-timer.png', alt='timer')
+                            p Время подбора: 10 минут
+                        .promo__icon
+                            img(src='../src/static/img/icon-cart.png', alt='hard-cart')
+                            p Бесплатная доставка
+                        .promo__icon
+                            img(src='../src/static/img/icon-messages.png', alt='messages')
+                            p Ответим на все вопросы
+                    button.button.button_promo(data-modal='consultation') заказать кОНСУЛЬТАЦИЮ
+                    .promo__link
+                        p или 
+                        a(href='#') ПЕРЕЙТИ В КАТАЛОГ
+        section.advantage
+            .container
+                h2.title НАШИ ПРЕИМУЩЕСТВА
+                .advantage__items
+                    .advantage__item
+                        .advantage__icon
+                            img(src='../src/static/img/icon-4.png', alt='cup')
+                        h3 Делимся опытом
+                        p Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
+                    .advantage__item
+                        .advantage__icon.advantage__icon_animation
+                            img(src='../src/static/img/icon-5.png', alt='puls')
+                        h3 Заботимся о здоровье
+                        p Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+                    .advantage__item
+                        .advantage__icon
+                            img(src='../src/static/img/icon-6.png', alt='cross')
+                        h3 Учим бегать
+                        p Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - 
+                            a(href='#') I LOVE RUNNING.
+        section.consultation
+            .container
+                h2.title.title_left Получите бесплатную консультацию по подбору пульсометра 
+                .consultation__descr Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
+                form.form(action='#' id='consultation-form')
+                    input(name='name' placeholder='Ваше имя' type='text')
+                    input(name='phone' placeholder='Ваш телефон')
+                    input(name='email' placeholder='Ваш E-mail' type='email')
+                    button.button.button_submit заказать кОНСУЛЬТАЦИЮ
+        .slider
+            .container
+                .slider__iner
+                    div
+                        img(src='../src/static/img/slider-1.jpg', alt='slider-1')
+                    div
+                        img(src='../src/static/img/slider-2.jpg', alt='slider-2')
+                    div
+                        img(src='../src/static/img/slider-3.jpg', alt='slider-3')
+        section.catalog
+            .container
+                h2.title Каталог пульсометров
+                ul.catalog__tabs
+                    li.catalog__tab.catalog__tab_active
+                        p Для фитнеса
+                    li.catalog__tab
+                        p для бега
+                    li.catalog__tab
+                        p для триатлона
+                .catalog__items.catalog__items_active
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Polar FT1
+                            .catalog-item__descr Для первых шагов в тренировках, основанных на сердечном ритме
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 4 750 руб.
+                                .catalog-item__price 4 500 руб.
+                            button.button.button_mini КУПИТЬ
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Suunto M2
+                            .catalog-item__descr Пульсометр начального уровня с комфортным тканевым ремешком
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 6 990 руб.
+                                .catalog-item__price 6 641 руб.
+                            button.button.button_mini КУПИТЬ
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Polar FT4
+                            .catalog-item__descr Улучшенная версия Polar FT1, имеющая следующие улучшения:
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 7 390 руб.
+                                .catalog-item__price 7 021 руб.
+                            button.button.button_mini КУПИТЬ
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Polar FT1
+                            .catalog-item__descr Для первых шагов в тренировках, основанных на сердечном ритме
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 4 750 руб.
+                                .catalog-item__price 4 500 руб.
+                            button.button.button_mini КУПИТЬ
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Suunto M2
+                            .catalog-item__descr Пульсометр начального уровня с комфортным тканевым ремешком
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 6 990 руб.
+                                .catalog-item__price 6 641 руб.
+                            button.button.button_mini КУПИТЬ
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Polar FT4
+                            .catalog-item__descr Улучшенная версия Polar FT1, имеющая следующие улучшения:
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 7 390 руб.
+                                .catalog-item__price 7 021 руб.
+                            button.button.button_mini КУПИТЬ
+                .catalog__items
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Polar FT1
+                            .catalog-item__descr Для первых шагов в тренировках, основанных на сердечном ритме
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 4 750 руб.
+                                .catalog-item__price 4 500 руб.
+                            button.button.button_mini КУПИТЬ
+                .catalog__items
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Polar FT1
+                            .catalog-item__descr Для первых шагов в тренировках, основанных на сердечном ритме
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 4 750 руб.
+                                .catalog-item__price 4 500 руб.
+                            button.button.button_mini КУПИТЬ
+                    .catalog-item
+                        .catalog-item__product.catalog-item__product_active
+                            .catalog-item__img
+                                img(src="../src/static/img/product.jpg", alt="product")
+                            .catalog-item__title Пульсометр Polar FT4
+                            .catalog-item__descr Улучшенная версия Polar FT1, имеющая следующие улучшения:
+                            a.catalog-item__link(href='#') ПОДРОБНЕЕ
+                        .catalog-item__list
+                            a.catalog-item__back(href='#') НАЗАД
+                            ul
+                                li Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                li Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                li Также Вы увидите информацию о расходе калорий за тренировку;
+                                li Вы сможете посмотреть данные по 10 тренировкам. 
+                        .catalog-item__line
+                        .catalog-item__footer
+                            .catalog-item__prices
+                                .catalog-item__old-price 7 390 руб.
+                                .catalog-item__price 7 021 руб.
+                            button.button.button_mini КУПИТЬ
+        section.feedback
+            .container
+                h2.title отзывы клиентов
+                .feedback__items
+                    .feedback-item
+                        .feedback-item__logo
+                            img(src='../src/static/img/icon-fb1.jpg' alt='foto-1')
+                        .feedback-item__info
+                            .feedback-item__name Ирина Иванченко 
+                            .feedback-item__descr 2 полумарафона
+                            .feedback-item__text
+                                p Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
+                                p Новые цели - новый гаджет!
+                                p Спасибо, RunSmart! 
+                    .feedback-item
+                        .feedback-item__logo
+                            img(src='../src/static/img/icon-fb2.jpg' alt='foto-2')
+                        .feedback-item__info
+                            .feedback-item__name Иван Сёмочкин 
+                            .feedback-item__descr 1 полумарафон
+                            .feedback-item__text
+                                p Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал.Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
+                                p С ними подготовился к своему первому полумарафону! Спасибо!!!
+                    .feedback-item
+                        .feedback-item__logo
+                            img(src='../src/static/img/icon-fb3.jpg' alt='foto-3')
+                        .feedback-item__info
+                            .feedback-item__name Юлия Дашкина 
+                            .feedback-item__descr 2 полумарафона
+                            .feedback-item__text
+                                p Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
+                                p Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
+                                p Спасибо!!!
+        footer.footer
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.381314056793!2d37.643273091835326!3d55.76924897949753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1591257243846!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            .footer__contacts
+                address.footer__address Москва, Мясницкий проезд, д.3с1
+                a.footer__phone(href='tel:84999228974') 8 (499) 922-89-74
+                .footer__social
+                    a.footer__icon(href='#')
+                        img(src='../src/static/img/icon-facebook.png' alt='facebook')
+                    a.footer__icon(href='#')
+                        img(src='../src/static/img/icon-in.png' alt='instagrame')
+                    a.footer__icon(href='#')
+                        img(src='../src/static/img/icon-pt.png' alt='pinterest')
+        .overlay
+            .modal(id='consultation')
+                .modal__close &times;
+                .modal__subtitle Просто заполните форму заявки
+                .modal__descr и мы перезвоним вам в течении 10 минут
+                form.form.form_mt25(action='#')
+                    input(name='name' placeholder='Ваше имя' type='text')
+                    input(name='phone' placeholder='Ваш телефон')
+                    input(name='email' placeholder='Ваш E-mail' type='email')
+                    button.button.button_submit заказать кОНСУЛЬТАЦИЮ
+            .modal(id='order')
+                .modal__close &times;
+                .modal__subtitle Ваш заказ:
+                .modal__descr Пульсометр Polar FT1
+                form.form.form_mt25(action='#')
+                    input(name='name' placeholder='Ваше имя' type='text')
+                    input(name='phone' placeholder='Ваш телефон')
+                    input(name='email' placeholder='Ваш E-mail' type='email')
+                    button.button.button_submit Купить
+            .modal.modal_thanks(id='thanks')
+                .modal__close &times;
+                .modal__subtitle Спасибо за вашу заявку!
+                .modal__descr Наш менеджер свяжется с вами в ближайшее время!
+        a.pageup(href='#up')
+            img(src='../src/static/img/arrow-up.png', alt='arrow-up')
+        script(src='//code.jquery.com/jquery-1.11.0.min.js')
+        script(src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
+        script(src='static/js/libs.min.js')
+        script(src='static/js/slick.min.js')
+        script(src='static/js/jquery.validate.min.js')
+        script(src='static/js/jquery.maskedinput.min.js')
+        script(src='static/js/main.js')
