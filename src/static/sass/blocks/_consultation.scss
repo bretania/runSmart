@@ -1,0 +1,23 @@
+.consultation {
+    min-height: 680px;
+    padding-top: 103px;
+    padding-bottom: 92px;
+    background: url('../../../src/static/img/bg-feedback.jpg') center (center/cover) no-repeat #4b4b4b;
+    &__descr {
+        width: 400px;
+        margin-top: 80px;
+        margin-bottom: 36px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .error {
+        border: 1px solid $main-color;
+    }
+    label.error {
+        color: #ffffff;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
